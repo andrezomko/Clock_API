@@ -1,4 +1,4 @@
-const {client} = require('../database') //mmudar esse nome
+const {client} = require('../database') 
 
 class Request{
     constructor({hour,minute,angle}){

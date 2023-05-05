@@ -1,5 +1,9 @@
+--> criar .env dbpassword e PORT
+-->testes com jest
+--containerizar o projeto
+
 npm init -y
-npm install express body-parser pg-promise jest axios --save
+npm install express body-parser pg-promise jest axios dotenv --save
 
 
 divisao de responsabilidades:
@@ -9,7 +13,7 @@ models: pasta que contém os modelos de dados da aplicação, que representam as
 routes: pasta que contém as rotas da API, que definem os endpoints e os métodos HTTP que podem ser acessados.
 tests: pasta que contém os testes unitários da aplicação.
 utils: pasta que contém funções utilitárias, como o cálculo do ângulo dos ponteiros do relógio.
-index.js: arquivo que inicia a aplicação.
+server.js: arquivo que inicia a aplicação.
 
 .env (como crio esssa porra?)
 - dbpassword
