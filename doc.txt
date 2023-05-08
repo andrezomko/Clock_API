@@ -18,3 +18,7 @@ server.js: arquivo que inicia a aplicação.
 .env (como crio esssa porra?)
 - dbpassword
 - PORT
+
+recriar a imagem toda  do container do Db ****
+
+teste da condicional
