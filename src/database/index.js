@@ -5,14 +5,6 @@ require("dotenv").config({
 path: path.resolve(__dirname,'../../.env')
 })
 
-
-console.log(`DBUSER C ESSE VALOR:${process.env.DB_USER}`);
-console.log(`DBHOST C ESSE VALOR:${process.env.DB_HOST}`);
-console.log(`DBNAME C ESSE VALOR:${process.env.DB_NAME}`);
-console.log(`DBPSSW C ESSE VALOR:${process.env.DB_PASSWORD}`);
-
-
-
 const client = new Client({
   user: "teste",
   host: "db",
