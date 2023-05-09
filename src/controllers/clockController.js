@@ -4,11 +4,15 @@ const {client} = require('../database')
 
 exports.getAngle =  async (req,res,next)=>{
     try{
-        const{ hour, minute} = req.params
+        let{ hour, minute} = req.params
+        if(!minute){ 
+            minute=0
+        }
         if( hour < 0 || hour > 11 || minute < 0 || minute > 59){
             res.send(('Hora deve estar entre 0-11 e minuto entre 0-59'))
             return
         }
+
         const queryVerific = `SELECT COUNT(*) FROM Data WHERE hour = ${hour} AND minute = ${minute}`
         const countResult = await client.query(queryVerific)
         const rowCount = countResult.rows[0].count

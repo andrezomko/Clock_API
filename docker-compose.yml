@@ -1,18 +1,26 @@
 version: "3.9"
 
-services:
+services: 
+
   server:
     build: .
     ports:
       - '5000:5000'
+    depends_on:
+      - db  
+    command: sh -c "sleep 10 && node server.js"
   db:
     image: 'postgres'
     environment:
-      POSTGRES_PASSWORD: '123456'
-      POSTGRES_USER: 'docker'
+      POSTGRES_PASSWORD: '654321'
+      POSTGRES_USER: 'teste'
     volumes:
       - data:/var/lib/postgresql/data
-      - ./backup.sql:/docker-entrypoint-initdb.d/backup.sql:ro
-
+      - ./backup.sql:/docker-entrypoint-initdb.d/backup.sql 
+  
 volumes:
-  data:
+  data: 
+
+
+
+
