@@ -81,7 +81,7 @@ Para executar os testes unitários abra seu terminal na pasta raiz do projeto e 
 ⚙️ `pg: 8.10.0`
 - Cliente PostgreSQL para Node.js que permite interação com um banco de dados PostgreSQL.
 
-⚙️ `docker: 23.0.5``
+⚙️ `docker: 23.0.5`
 
 - Plataforma de "open source" para empacotar e executar aplicativos em containeres
     
